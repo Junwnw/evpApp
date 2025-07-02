@@ -3,6 +3,7 @@ electron/node_modules/
 electron/dist/
 vite.config.js.*
 .env*
+node_modules/
 
 # Electron
 out/

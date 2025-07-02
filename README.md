@@ -9,7 +9,7 @@ npm install
 
 ### 安装 Vue 前端依赖
 ```bash
-cd renderer/vue-app
+cd frontend
 npm install
 ```
 
@@ -22,13 +22,13 @@ pip install flask
 
 ### 启动前端开发服务器
 ```bash
-cd renderer/vue-app
+cd frontend
 npm run dev
 ```
 
-### 启动 Electron 主进程（自动启动 Python 后端），另外一个terminal运行后端，cd evpApp/backend
+### 启动 Electron 主进程（自动启动 Python 后端），另外一个terminal运行后端，cd backend
 ```bash
-cd ../..
+cd backend
 npm run electron
 ```
 ### 如果想运行lo
