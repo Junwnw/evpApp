@@ -30,7 +30,7 @@
             </el-form-item>
             <el-form-item>
               <el-button type="primary" @click="handleLogin" class="login-btn">
-                登录
+                LOGIN
               </el-button>
             </el-form-item>
           </el-form>
@@ -104,9 +104,24 @@
   }
   
   .login-btn {
-    width: 100%;
-    background-color: #a0c7c7;
-    border: none;
-  }
+  width: 50%;
+  height: 48px; 
+  background-color: #dd6464;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  margin: 0 auto; /* ✅ 水平居中 */
+  display: block; /* ✅ 让 margin 生效 */
+}
+
+.login-btn:hover {
+  background-color: white;
+  color: #000000;
+  box-shadow: 0 0 8px rgba(45, 58, 75, 0.2);
+}
   </style>
   
