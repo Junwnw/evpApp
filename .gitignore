@@ -1,0 +1,27 @@
+# Node / Vue
+electron/node_modules/
+electron/dist/
+vite.config.js.*
+.env*
+
+# Electron
+out/
+build/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+instance/
+*.db
+
+# VSCode/IDE
+.vscode/
+.idea/
+*.log
+
+# 系统
+.DS_Store
+Thumbs.db

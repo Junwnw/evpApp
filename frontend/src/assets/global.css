@@ -1,0 +1,15 @@
+/* global.css */
+body {
+    font-family: 'Segoe UI', 'Helvetica Neue', Arial, sans-serif; /* 使用常见的字体 */
+    margin: 0;   /* 去除默认边距 */
+    background-color: #cbd4e1; /* 设置背景颜色 */
+    color: #cda6a6;
+  }
+  
+  a {
+    text-decoration: none;
+    color: #798da0; /* Element 默认主色 */
+  }
+  :root {
+    --el-color-primary: #4f6623;  /* ui都改成绿色主题 */
+  }
