@@ -19,13 +19,16 @@
             <span>工具模块</span>
           </template>
           <el-menu-item index="2-1" @click="goTo('crawler')">爬虫工具</el-menu-item>
-          <el-menu-item index="2-2" @click="goTo('analyzer')">分析工具</el-menu-item>
+          <el-menu-item index="2-2" @click="goTo('analyzer')">分析工具</el-menu-item>  
+            <!-- 可扩展工具模块children列 -->
         </el-sub-menu>
   
         <el-menu-item index="3" @click="goTo('settings')">
           <el-icon><Tools /></el-icon>
           <template #title>设置</template>
         </el-menu-item>
+
+        
       </el-menu>
   
       <!-- 折叠按钮 -->
@@ -59,10 +62,12 @@
   
   <style scoped>
   .sidebar {
-    background-color: #2d3a4b;
-    color: white;
+    background-color: #5175a3;
+    color: rgb(126, 43, 185);
     position: relative;
     height: 100vh;
+    transition: width 0.3s ease; /* 添加平滑过渡动画 */
+    overflow: hidden; /* 防止子元素超出时抖动 */
   }
   .collapse-btn {
     position: absolute;
@@ -73,5 +78,18 @@
     cursor: pointer;
     color: #fff;
     font-size: 20px;
+    
   }
+  /* 修改 el-menu 背景色 */
+    ::v-deep(.el-menu-vertical-demo) {
+    background-color: #486077;
+    color: #0c0101;
+    border: none;
+    }
+
+    /* 修改菜单激活项颜色 */
+    ::v-deep(.el-menu-vertical-demo .el-menu-item.is-active) {
+    background-color: #1f2d3d;
+    color: #ffd04b;
+    }
   </style>
